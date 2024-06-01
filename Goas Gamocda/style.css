@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: black;
+    padding: opx;
+    margin: 0px;
+}
+
+.navbar a{
+    list-style-type: none;
+    background-color: aliceblue;
+    padding: 0px;
+    display: block;
+    text-align: center;
+
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+body{
+    background-color: rgb(255, 240, 35);
+}
