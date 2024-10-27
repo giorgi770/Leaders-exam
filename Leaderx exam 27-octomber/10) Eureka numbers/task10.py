@@ -14,11 +14,11 @@ def is_eureka(num):
     return sum(d ** (i + 1) for i, d in enumerate(digits)) == num
 
 def eureka_numbers(a, b):
-    eureka_lists = []
+    eureka_list = []
     for num in range(a, b + 1):
         if num < 10 or is_eureka(num):
-            eureka_lists.append(num)
-        return eureka_lists
+            eureka_list.append(num)
+    return eureka_list
 
-print(eureka_numbers(1, 10))
-print(eureka_numbers(1, 100))
+print(eureka_numbers(1, 10))   
+print(eureka_numbers(1, 100))  

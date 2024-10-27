@@ -15,12 +15,12 @@
 def sort_string(s):
     if not s:
         return ""
-    words = s.split()
-
-    sorted_words = sorted(words, key=lambda word: int(''.join(filter(str.isdigit, word))))
     
+    words = s.split()
+    
+    sorted_words = sorted(words, key=lambda word: int(''.join(filter(str.isdigit, word))))
     return ' '.join(sorted_words)
 
 print(sort_string("is2 Thi1s T4est 3a"))
-print(sort_string("4 of Fo1r people g3ood th5e the2"))
-print(sort_string(""))
+print(sort_string("4of Fo1r pe6ople g3ood th5e the2")) 
+print(sort_string(""))  # ""
