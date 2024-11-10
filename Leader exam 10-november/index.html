@@ -7,19 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-        <div id="weather-container">
-        <h2>Weather</h2>
-        <input type="text" id="city" placeholder="Enter City">
-        <button onclick="getWeather()">Search</button>
-
-        <img id="Weather-icon" alt="Weather Icon">
-
-        <div id="temp-div"></div>
-
-        <div id="Weather-info"></div>
-
-        <div id="hourly-forecast"></div>
+    <div class="container">
+        <h1>Weather</h1>
+        <img src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-1024.png" width="180">
+        <div class="search-bar">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button onclick="getWeather()">Search</button>
         </div>
+        <div id="weatherDisplay"></div>
+    </div>
         <script src="script.js"></script>
 </body>
 </html>
