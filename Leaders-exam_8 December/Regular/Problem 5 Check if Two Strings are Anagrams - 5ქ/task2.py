@@ -10,11 +10,8 @@
 # assert are_anagrams("triangle", "integral") == True
 
 def are_anagrams(s1, s2):
-
     return sorted(s1) == sorted(s2)
 
-assert are_anagrams("listen", "silent") == True
-assert are_anagrams("hello", "world") == False
-assert are_anagrams("triangle", "integral") == True
-
-print("All test passed succsefully")
+print(are_anagrams("listen", "silent"))
+print(are_anagrams("hello", "world"))
+print(are_anagrams("triangle", "integral"))

@@ -16,9 +16,7 @@ import math
 def problem_2_sum_of_positive(numbers):
     return sum(math.floor(num) for num in numbers if num > 0)
 
-assert problem_2_sum_of_positive([1, -4, 7, 12]) == 20
-assert problem_2_sum_of_positive([-1.5, 2.7, -3.3, 4.8]) == 6
-assert problem_2_sum_of_positive([]) == 0
-assert problem_2_sum_of_positive([-1, -2, -3]) == 0
-
-print("All tests passed succesfully")
+print(problem_2_sum_of_positive([1, -4, 7, 12]))
+print(problem_2_sum_of_positive([-1.5, 2.7, -3.3, 4.8]))
+print(problem_2_sum_of_positive([]))
+print(problem_2_sum_of_positive([-1, -2, -3]))

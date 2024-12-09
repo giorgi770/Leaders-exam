@@ -16,4 +16,4 @@ assert problem_1_sum_of_positive([1, -4, 7, 12]) == 20
 assert problem_1_sum_of_positive([-1, -2, -3, -4]) == 0
 assert problem_1_sum_of_positive([]) == 0
 
-print("All tests passed succesfully")
+print(problem_1_sum_of_positive([1, -4, 7, 12]))

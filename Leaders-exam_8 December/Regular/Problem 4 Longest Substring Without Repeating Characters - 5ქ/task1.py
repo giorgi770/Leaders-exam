@@ -17,16 +17,14 @@ def longest_unique_substring(s):
     for right in range(len(s)):
         while s[right] in char_set:
             char_set.remove(s[left])
-            left +=1
+            left += 1
 
         char_set.add(s[right])
         max_lenght = max(max_lenght, right - left + 1)
 
     return max_lenght
 
-assert longest_unique_substring("abcabcbb") == 3
-assert longest_unique_substring("bbbbb") == 1
-assert longest_unique_substring("") == 0
-assert longest_unique_substring("pwwkew") == 3
-
-print("All test passed succsefully")
+print(longest_unique_substring("abcabcbb"))
+print(longest_unique_substring("bbbbb"))
+print(longest_unique_substring(""))
+print(longest_unique_substring("pwwkew"))

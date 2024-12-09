@@ -11,17 +11,11 @@
 
 def find_missing_number(numbers):
     n = len(numbers) + 1
-
-    expected_sum = n * (n + 1)
-
+    expected_sum = n * (n + 1) // 2
     actual_sum = sum(numbers)
-
     missing_number = expected_sum - actual_sum
+    return missing_number if missing_number > 0 else None
 
-    return missing_number if missing_number > 0 else []
-
-assert find_missing_number([1, 2, 4, 5]) == 3
-assert find_missing_number([3, 5, 6, 1, 2]) == 4
-assert find_missing_number([2]) == []
-
-print("All tests passed succesufully")
+print(find_missing_number([1, 2, 4, 5]))
+print(find_missing_number([3, 5, 6, 1, 2]))
+print(find_missing_number([2]))

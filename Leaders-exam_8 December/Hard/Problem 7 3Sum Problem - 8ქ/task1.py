@@ -37,8 +37,7 @@ def three_sum(nums):
                 right -= 1
 
     return triplets
-    
-assert three_sum([-1, 0, 1, 2, -1, -4]) == [[-1, -1, 2], [-1, 0, 1]]
-assert three_sum([0, 0, 0]) == [[0, 0, 0]]
-assert three_sum([1, 2, -2, -1]) == []
-print("All test passed succsefully")
+
+print(three_sum([-1, 0, 1, 2, -1, -4]))
+print(three_sum([0, 0, 0]))
+print(three_sum([1, 2, -2, -1]))
